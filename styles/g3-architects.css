@@ -8,6 +8,14 @@
 }
 
 /* shared styles */
+main > section {
+    margin-top: 130px;
+}
+main{
+    width: 75%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
 .display-flex{
     display: flex;
 }
@@ -23,14 +31,15 @@
     margin: 0 auto;
     /* border: 1px solid red; */
 }
-.btn-pimary{
+.btn-primary{
     background-color: #FF900E;
     color: #FFFFFF;
     padding: 20px 25px ;
     border: none;
     border-radius: 8px;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
 
 }
 /* header styles */
@@ -80,6 +89,42 @@
     line-height: 1.6rem;
     color: #727272;
     margin-bottom: 30px;
+}
+
+/* team and feature style */
+.teams{
+    align-items: center;
+    gap: 73px;
+}
+.our-features{
+    max-width: 403px;
+}
+.features-title{
+    font-size: 2.8rem;
+}
+.features-description{
+    color: #727272;
+    font-size: 1rem;
+    line-height: 26px;
+    margin-bottom: 32px;
+}
+#quick-list{
+    color: #727272;
+    font-weight: 500;
+}
+#of-our{
+    color: #131313;
+    font-weight: 700;
+}
+#features{
+    color: #FF900E;
+    font-weight: 700;
+}
+
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
 }
 
 
