@@ -44,9 +44,6 @@ main{
     font-size: 2.8rem;
     font-weight: 700;
 }
-/* header styles */
-
-
 
 /* navbar styles */
 .brand{
@@ -171,8 +168,22 @@ main{
     margin-bottom: 75px;
 }
 
-/* responsive media query */
+/* Sponspors related style */
+.sponspors-info{
+    max-width: 405px;
+    margin: 50px auto;
+    text-align: center;
+}
+.sponspors-companies{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.sponspors-companies img{
+    filter: grayscale(100);
+}
 
+
+/* responsive media query */
 
 /* small size device */
 @media screen and (max-width:576px) {
@@ -181,11 +192,26 @@ main{
     .teams{
         flex-direction: column;
     }
-    .team-img-container{
+    .team-img-container, 
+    .facts-container,
+    .sponspors-companies{
         grid-template-columns:repeat(1, 1fr);
+    }
+    .facts-container{
+        justify-items: center;
+        gap: 24px;
+        align-items: center;
+    }
+    .some-facts{
+        text-align: center;
+    }
+    .sponspors-companies{
+        justify-items: center;
+        gap: 30px;
     }
     .our-features{
         margin-left: 20px;
+        text-align: center;
     }
     .banner-title{
         text-align: center;
@@ -205,5 +231,10 @@ main{
     }
     .our-features{
         margin: 50px auto;
+    }
+    .sponspors-companies , .fact-description {
+        grid-template-columns: repeat(2, 1ft);
+        gap: 50px;
+        justify-items: center;
     }
 }
