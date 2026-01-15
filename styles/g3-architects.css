@@ -28,8 +28,7 @@ main{
 .navbar ,.banner{
     width: 75%;
     max-width: 1024px;
-    margin: 0 auto;
-    /* border: 1px solid red; */
+    margin: 0 auto; 
 }
 .btn-primary{
     background-color: #FF900E;
@@ -40,7 +39,10 @@ main{
     font-weight: 600;
     font-size: 1rem;
     cursor: pointer;
-
+}
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
 }
 /* header styles */
 
@@ -99,9 +101,6 @@ main{
 .our-features{
     max-width: 403px;
 }
-.features-title{
-    font-size: 2.8rem;
-}
 .features-description{
     color: #727272;
     font-size: 1rem;
@@ -127,8 +126,54 @@ main{
     gap: 24px;
 }
 
+/* some fact related styles */
+.some-fact .section-title{
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: #131313;
+    margin-bottom: 0;
+}
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 92px;
+}
+.fact-card{
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.fact-number{
+    color: #424242;
+    font-weight: 600;
+    font-size: 2.8rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.fact-name{
+    color: #727272;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 10px;
+}
+.fact-card div{
+    padding-top: 65px;
+    padding-bottom: 45px;
+}
+.fact-description{
+    max-width: 430px;
+    line-height: 26px;
+    font-size: 1rem;
+    margin-bottom: 75px;
+}
 
 /* responsive media query */
+
+
 /* small size device */
 @media screen and (max-width:576px) {
     .navbar ,
