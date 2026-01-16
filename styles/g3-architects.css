@@ -32,6 +32,9 @@ main{
     max-width: 1024px;
     margin: 0 auto; 
 }
+.btn-primary:hover{
+    background-color: #ff8f0ea6;
+}
 .btn-primary{
     background-color: #FF900E;
     color: #FFFFFF;
@@ -52,6 +55,10 @@ main{
     color: #131313;
     font-size: 3rem;
     font-weight: 700;
+}
+.nav-item a:hover,.brand:hover
+{
+    color: #FF900E;
 }
 .navbar{
     justify-content: space-between;
@@ -118,11 +125,19 @@ main{
     color: #FF900E;
     font-weight: 700;
 }
-
+.team-img-container img:hover,
+.banner-image:hover ,
+.features-architect img:hover{
+    /* transform: translateZ(-10px) scale(1.05); */
+    box-shadow:  0px 4px 15px 5px #ff8f0e6e;
+    border-radius: 8px;
+    filter: none;
+}
 .team-img-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+    transition: transform 0.3s ease,box-shadow 0.3s ease;
 }
 
 /* features section related style */
@@ -133,6 +148,10 @@ main{
 #features-section-title{
     border-left: 5px solid #FF900E;
     padding-left: 21px;
+}
+.features-card:hover{
+    transform: translateY(-6px);
+    background-color: #ff8f0e5d;
 }
 .features-card{
     padding: 10px 30px;
@@ -179,6 +198,10 @@ main{
     grid-template-columns: repeat(4, 1fr);
     gap: 92px;
 }
+.fact-card:hover{
+    transform: translateY(-15px);
+    background-color: #ff8f0e5d;
+}
 .fact-card{
     border: 1px solid #FF900E;
     border-radius: 8px;
@@ -222,10 +245,14 @@ main{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
-.sponspors-companies img{
-    filter: grayscale(100);
+.image{
+    filter: grayscale(100%);
+    transition: all 0.4s ease;
 }
-
+.image:hover{
+    filter: grayscale(0%);
+    transform: translateY(-10px);
+}
 /* footer style */
 footer{
     background-color: #FFF4E7;
